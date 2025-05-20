@@ -93,7 +93,7 @@ The Wireshark protocol analyzer images above shows specific packet captures, inc
 <img src="https://i.imgur.com/mTyLqR0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-The above images show the command-line output of NSlookup and Ping coomands executed in Powershell.
+The above images show the command-line output of NSlookup and Ping commands executed in Powershell.
 
 </p>
 <br />
