@@ -41,7 +41,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/4XIdlWV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Image above is showing the images of the resource group, Virtual Network, and both Window and Linux Virtual Machine being created. Need correctionhjjajhh
+The image above shows the creation of Resource Group, Virtual Network, and both Windows and Linux Virtual Machines. To create a Resource Group, I navigated to "create resource group" in Microsoft Azure, provided a name, selected a region, then reviewed and created it. To create the Virtual Machines, I went to Virtual machines, selected "create" named Resource Group, the Virtual Machine, chose region, select image , specified the VM size, Selected Virtual Machine (VNet), and then reviewed and created the VMs.
 </p>
 <br />
 
