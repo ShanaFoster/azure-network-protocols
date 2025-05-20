@@ -41,7 +41,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/4XIdlWV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Image above is showing the images of the resource group, Virtual Network, and both Window and Linux Virtual Machine being created.
+Image above is showing the images of the resource group, Virtual Network, and both Window and Linux Virtual Machine being created. Need correctionhjjajhh
 </p>
 <br />
 
@@ -63,7 +63,7 @@ Image above is showing the images of the resource group, Virtual Network, and bo
 <br />
 <img src="https://i.imgur.com/34qQUah.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-The above image shows Remote Desktop being navigated with the public IP address I got from the Windows virtual machine. Also an image of the wireshark being instlled with Windows 64 bit. Wireshark is used to view traffic going in and out from both virtual machine. The other image is showing Wireshark protocol analyzer being open and packet capture is be shown with all the spams before a specific filter is be performed.
+The above image shows Remote Desktop being accessed the public IP address obtained from the Windows virtual machine. Anthother image shows Wireshark being instlled using Windows 64-bit version. Wreshark is used to monitor network traffic going in and out of both virtual machines. The final image is shows the Wireshark protocol analyzer open, displaying packet captures including spam traffic, before a specific filter is applied.
 </p>
 <br />
 <p>
@@ -84,7 +84,7 @@ The above image shows Remote Desktop being navigated with the public IP address 
 <img src="https://i.imgur.com/Sgtf17u.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The Wireshark protocol analyzer images above is showing specific packet capture of ICMP that does have a port, SSH which is port 22 and is also know as the secure port. Then we have a capture for DHCP port 67 and 68, DNS port 53 and Remote Desktop port tcp port 3389.
+The Wireshark protocol analyzer images above shows specific packet captures, including ICMP which doesn't use a port; SSH which is port 22 and is known as the secure port; DHCP which uses port 67 and 68, DNS which uses port 53; and Remote Desktop which uses TCP port 3389.
 </p>
 <br />
 
@@ -93,14 +93,14 @@ The Wireshark protocol analyzer images above is showing specific packet capture 
 <img src="https://i.imgur.com/mTyLqR0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-The above images show the command line for NSlookup and Ping performed in Powershell.
+The above images show the command-line output of NSlookup and Ping coomands executed in Powershell.
 
 </p>
 <br />
 <img src="https://i.imgur.com/DKPi6Eb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-The above image is showing a rule being created to block coming traffic from going to the Windows Vitural Machines.To do this I had to navigate to Microsoft Azure, open the Linux Virtual Machine, navigate network, network setting, network security group, Linux VM NSG, setting inbound security rules then add rule and watching the rule be executed in Powershell.
+The above image is shows a rule being created to block incoming traffic to the Windows Virtual Machine.To do this, I navigate to Microsoft Azure, opened the Linux Virtual Machine, went to Network > Network Setting > Network Security Group > Linux VM NSG > Inbound Security Rules, and add a new rule.  The execution of this rule was then observed in Powershell.
 
 </p>
 <br />
