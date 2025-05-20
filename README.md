@@ -87,3 +87,20 @@ The above image shows Remote Desktop being navigated with the public IP address 
 The Wireshark protocol analyzer images above is showing specific packet capture of ICMP that does have a port, SSH which is port 22 and is also know as the secure port. Then we have a capture for DHCP port 67 and 68, DNS port 53 and Remote Desktop port tcp port 3389.
 </p>
 <br />
+
+<img src="https://i.imgur.com/D8X5O0Y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/mTyLqR0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+The above images show the command line for NSlookup and Ping performed in Powershell.
+
+</p>
+<br />
+<img src="https://i.imgur.com/DKPi6Eb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+The above image is showing a rule being created to block coming traffic from going to the Windows Vitural Machines.To do this I had to navigate to Microsoft Azure, open the Linux Virtual Machine, navigate network, network setting, network security group, Linux VM NSG, setting inbound security rules then add rule and watching the rule be executed in Powershell.
+
+</p>
+<br />
