@@ -41,7 +41,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/4XIdlWV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The image above shows the creation of Resource Group, Virtual Network, and both Windows and Linux Virtual Machines. To create a Resource Group, I navigated to "create resource group" in Microsoft Azure, provided a name, selected a region, then reviewed and created it. To create the Virtual Machines, I went to Virtual machines, selected "create" named Resource Group, the Virtual Machine, chose region, select image , specified the VM size, Selected Virtual Machine (VNet), and then reviewed and created the VMs.
+The image above shows the creation of Resource Group, Virtual Network, and both Windows and Linux Virtual Machines. To create a Resource Group, I navigated to "create resource group" in Microsoft Azure, provided a name, selected a region, then reviewed and created it. To create the Virtual Machines, I went to Virtual machines, selected "create" named Resource Group, the Virtual Machine, chose region, select image , specified the VM size, create Username and Password, Selected Virtual Machine (VNet), and then reviewed and created the VMs.
 </p>
 <br />
 
@@ -63,12 +63,12 @@ The image above shows the creation of Resource Group, Virtual Network, and both 
 <br />
 <img src="https://i.imgur.com/34qQUah.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-The above image shows Remote Desktop being accessed the public IP address obtained from the Windows virtual machine. Anthother image shows Wireshark being instlled using Windows 64-bit version. Wreshark is used to monitor network traffic going in and out of both virtual machines. The final image is shows the Wireshark protocol analyzer open, displaying packet captures including spam traffic, before a specific filter is applied.
+The above image shows Remote Desktop being accessed with the public IP address obtained from the Windows virtual machine. Another image shows Wireshark being instlled using Windows 64-bit version. Wireshark is used to monitor network traffic going in and out of  virtual machines. The final image shows the Wireshark protocol analyzer open, displaying packet captures including spam traffic, before a specific filter is applied.
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/aVAPD1V.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  
+
+<img src="https://i.imgur.com/2d5j3ie.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <img src="https://i.imgur.com/GsnJh5c.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -84,7 +84,7 @@ The above image shows Remote Desktop being accessed the public IP address obtain
 <img src="https://i.imgur.com/Sgtf17u.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The Wireshark protocol analyzer images above shows specific packet captures, including ICMP which doesn't use a port; SSH which is port 22 and is known as the secure port; DHCP which uses port 67 and 68, DNS which uses port 53; and Remote Desktop which uses TCP port 3389.
+The Wireshark protocol analyzer images above display specific packet captures: ICMP Internet Control Message Protocol): Used for network ping and doesn't use a port; SSH (Secure Shell): A protocol used for secure remote login. It uses TCP port 22, known also as a secure port. DNS (Domain Name System): Used to resolve domain names into IP addresses, it uses UDP port 53 but can also uses TCP port for larger queries.DHCP(Dynamic Host Configuration Protocol): Used for assiging IP addresses. It uses UDP port 67 (Server) and 68 (client). RDP(Remote Desktop Protocol): Enable remote access to another computer overa nework. Ut uses TCP port 3389.
 </p>
 <br />
 
@@ -100,7 +100,18 @@ The above images show the command-line output of NSlookup and Ping commands exec
 <img src="https://i.imgur.com/DKPi6Eb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-The above image is shows a rule being created to block incoming traffic to the Windows Virtual Machine.To do this, I navigate to Microsoft Azure, opened the Linux Virtual Machine, went to Network > Network Setting > Network Security Group > Linux VM NSG > Inbound Security Rules, and add a new rule.  The execution of this rule was then observed in Powershell.
+The above image is shows a rule being created to block incoming traffic to the Windows Virtual Machine.To do this, I navigate to Microsoft Azure, opened the Linux Virtual Machine, went to Network > Network Setting > Network Security Group > Linux VM NSG > Inbound Security Rules, and add a new rule.  The execution of this rule was then observed in PowerShell and Wireshark. 
 
 </p>
 <br />
+
+<img src="https://i.imgur.com/DvnxYv4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+</p>
+<br />
+The image above show the Linux machine's private IP address being used to initiate a ping coomand from within the Windows VM using PowerShell. The above display also show the ping traffic in Wireshark. This ping command is used to test connection between the two machine.
+
+</p>
+<br />
+
+
