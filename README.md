@@ -28,7 +28,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Create Resource Group, Virtual machine and Virtual Network
 - Remote connection with IP address from Mircosoft Azure
 - Install Wireshark and watch packet capture
-- Filter for ICMP, SSH RDP, DNS and DHCP capture
+- Filter for ICMP, SSH RDP, DNS and DHCP 
 - Create rule in Azure and watch it displayed in PowerShell
 
 <h2>Actions and Observations</h2>
