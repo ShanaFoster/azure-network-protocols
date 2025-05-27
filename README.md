@@ -25,10 +25,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create Resource Group, Virtual machine and Virtual Network
+- Remote connection with IP address from Mircosoft Azure
+- Install Wireshark and watch packet capture
+- Filter for ICMP, SSH RDP, DNS and DHCP capture
+- Create rule in Azure and watch it displayed in PowerShell
 
 <h2>Actions and Observations</h2>
 
@@ -109,7 +110,7 @@ The above image is shows a rule being created to block incoming traffic to the W
 
 </p>
 <br />
-The image above show the Linux machine's private IP address being used to initiate a ping coomand from within the Windows VM using PowerShell. The above display also show the ping traffic in Wireshark. This ping command is used to test connection between the two machine.
+The image above show the Linux machine's private IP address being used to initiate a ping command from within the Windows VM using PowerShell. The above display also show the ping traffic in Wireshark. This ping command is used to test connection between the two machine.
 
 </p>
 <br />
